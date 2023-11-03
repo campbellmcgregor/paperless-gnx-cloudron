@@ -1,0 +1,40 @@
+{
+  "id": "com.paperlessng.cloudronapp",
+  "title": "Paperless-ngx",
+  "author": "Paperless-ngx Team",
+  "description": "file://DESCRIPTION.md",
+  "tagline": "Scan, index and archive documents",
+  "version": "1.11.0",
+  "upstreamVersion": "1.17.4",
+  "healthCheckPath": "/",
+  "httpPort": 8000,
+  "minBoxVersion": "7.1.0",
+  "addons": {
+    "localstorage": {
+      "ftp": {
+        "uid": 1000,
+        "uname": "cloudron"
+      }
+    },
+    "redis": {
+      "noPassword": true
+    },
+    "postgresql":{},
+    "recvmail": {}
+  },
+  "memoryLimit": 1000000000,
+  "manifestVersion": 2,
+  "website": "https://docs.paperless-ngx.com/",
+  "contactEmail": "support@cloudron.io",
+  "icon": "file://logo.png",
+  "tags": [ "document", "ocr", "pdf", "archive" ],
+  "mediaLinks": [
+    "https://screenshots.cloudron.io/com.paperlessng.cloudronapp/dashboard.png",
+    "https://screenshots.cloudron.io/com.paperlessng.cloudronapp/documents-smallcards.png",
+    "https://screenshots.cloudron.io/com.paperlessng.cloudronapp/documents-table.png"
+  ],
+  "postInstallMessage": "file://POSTINSTALL.md",
+  "changelog": "file://CHANGELOG.md",
+  "forumUrl": "https://forum.cloudron.io/category/137/paperless-ng",
+  "documentationUrl": "https://docs.cloudron.io/apps/paperless-ngx"
+}
